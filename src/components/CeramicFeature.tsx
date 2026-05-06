@@ -73,7 +73,7 @@ export default function CeramicFeature() {
                 <div className="h-[1px] w-12 bg-brand-red"></div>
                 <span className="text-brand-red text-xs font-bold uppercase tracking-[0.3em]">Protection</span>
               </div>
-              <h2 className="text-4xl md:text-[60px] leading-[0.9] font-black tracking-tighter uppercase mb-6">Gloss That<br/><span className="text-transparent" style={{ WebkitTextStroke: '1px white' }}>Lasts.</span></h2>
+              <h2 className="text-4xl md:text-[60px] leading-[0.9] font-black tracking-tighter uppercase mb-6">Gloss That<br/><span className="display-outline">Lasts.</span></h2>
               <p className="text-lg text-brand-muted mb-10 font-light leading-relaxed max-w-xl">
                 Ceramic coating adds a slick protective layer designed to help your car maintain a deeper shine, resist dirt buildup, and make maintenance easier.
               </p>

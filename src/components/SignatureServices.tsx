@@ -7,31 +7,31 @@ export default function SignatureServices() {
       title: 'Ceramic Coating',
       tag: 'Best for: Long-term protection',
       description: 'Long-lasting gloss and protection designed to help your paint stay cleaner, slicker, and easier to maintain.',
-      image: '/assets/ceramic-coating.jpg',
+      image: '/assets/ceramic-coating.png',
     },
     {
       title: 'Paint Correction',
       tag: 'Best for: Dull or swirled paint',
       description: 'Refines swirl marks, haze, and dull paint to restore depth, clarity, and reflection.',
-      image: '/assets/paint-correction.jpg',
+      image: '/assets/paint-correction.png',
     },
     {
       title: 'Interior & Exterior Detailing',
       tag: 'Best for: Daily drivers',
       description: 'A complete clean inside and out, built to bring back that fresh, cared-for feeling.',
-      image: '/assets/exterior-detail.jpg',
+      image: '/assets/detailing.png',
     },
     {
       title: 'Window Tinting',
       tag: 'Best for: Privacy & comfort',
       description: 'Cleaner looks, added privacy, and improved comfort with professional tinting.',
-      image: '/assets/window-tinting.jpg',
+      image: '/assets/window-tinting.png',
     },
     {
       title: 'Tech Install',
       tag: 'Best for: Modern convenience',
       description: 'Modern upgrades installed cleanly so your car feels more practical, connected, and protected.',
-      image: '/assets/carplay-install.jpg',
+      image: '/assets/tech-install.png',
     },
   ];
 
@@ -63,15 +63,14 @@ export default function SignatureServices() {
               {/* Glossy sweep effect */}
               <div className="absolute inset-0 transform -translate-x-[150%] skew-x-[-30deg] bg-gradient-to-r from-transparent via-white/5 to-transparent group-hover:animate-[sweep_1.5s_ease-in-out_forwards]" />
               
-              <div className="md:w-2/5 h-64 md:h-auto relative bg-brand-carbon border-r border-white/5">
+              <div className="md:w-2/5 h-64 md:h-auto relative bg-brand-carbon border-r border-white/5 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-brand-black to-transparent z-10" />
-                <div className="w-full h-full bg-[#111111] relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
-                  <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#050505] to-transparent z-10" />
-                  <span className="absolute bottom-4 left-4 z-20 text-[10px] font-mono text-white/40 uppercase tracking-widest">
-                    Placeholder Image
-                  </span>
-                </div>
+                <img 
+                  src={service.image} 
+                  alt={service.title}
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"
+                />
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000 z-20" />
               </div>
               
               <div className="p-8 md:p-12 md:w-3/5 flex flex-col justify-center relative z-20">

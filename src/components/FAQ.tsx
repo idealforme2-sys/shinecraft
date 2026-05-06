@@ -52,7 +52,7 @@ export default function FAQ() {
             viewport={{ once: true }}
             className="text-4xl md:text-[60px] leading-[0.9] font-black tracking-tighter uppercase mb-6"
           >
-            Clear <span className="text-transparent" style={{ WebkitTextStroke: '1px white' }}>Answers.</span>
+            Clear <span className="display-outline">Answers.</span>
           </motion.h2>
         </motion.div>
 

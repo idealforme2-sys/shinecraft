@@ -34,7 +34,7 @@ export default function Process() {
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-brand-red/30 to-transparent" />
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-[60px] leading-[0.9] font-black tracking-tighter uppercase mb-6">How It <span className="text-transparent" style={{ WebkitTextStroke: '1px white' }}>Works</span></h2>
+          <h2 className="text-4xl md:text-[60px] leading-[0.9] font-black tracking-tighter uppercase mb-6">How It <span className="display-outline">Works</span></h2>
           <p className="text-brand-muted text-lg max-w-2xl mx-auto font-light leading-relaxed">
             A simple, professional process designed around convenience without sacrificing the finish.
           </p>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
+import shineCraftLogo from '../../shinecraft_logo.jpg';
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,17 +27,16 @@ export default function Navigation() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-brand-black/90 backdrop-blur-md border-b border-white/5 py-4' : 'bg-transparent py-6'
+        scrolled ? 'bg-brand-black/90 backdrop-blur-md shadow-[0_18px_40px_rgba(0,0,0,0.45)] py-4' : 'bg-transparent py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-3 z-50">
-          <div className="w-8 h-8 bg-brand-red flex items-center justify-center">
-            <span className="font-black text-black text-xs">SC</span>
-          </div>
-          <span className="text-xl font-bold tracking-tighter uppercase">
-            ShineCraft<span className="text-brand-red">.</span>
-          </span>
+          <img
+            src={shineCraftLogo}
+            alt="ShineCraft logo"
+            className="h-10 md:h-11 w-auto object-contain"
+          />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

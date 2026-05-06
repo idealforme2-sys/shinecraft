@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import shineCraftLogo from '../../shinecraft_logo.jpg';
 
 export default function Loader() {
   const [loading, setLoading] = useState(true);
@@ -34,24 +35,14 @@ export default function Loader() {
            </motion.div>
 
              <div className="relative z-10 flex flex-col items-center">
-             <div className="flex items-center gap-2 mb-4">
-               <motion.span 
-                 initial={{ opacity: 0, scale: 0.8 }}
-                 animate={{ opacity: 1, scale: 1 }}
-                 transition={{ duration: 0.5, delay: 0.1 }}
-                 className="w-8 h-8 bg-brand-red flex items-center justify-center text-xs text-white font-black"
-               >
-                 SC
-               </motion.span>
-               <motion.h1 
-                 initial={{ opacity: 0, y: 10, filter: 'blur(10px)' }}
-                 animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-                 transition={{ duration: 1, delay: 0.2 }}
-                 className="text-white text-4xl md:text-5xl font-black uppercase tracking-tighter"
-               >
-                 ShineCraft<span className="text-brand-red">.</span>
-               </motion.h1>
-             </div>
+             <motion.img
+               initial={{ opacity: 0, scale: 0.9, y: 10, filter: 'blur(10px)' }}
+               animate={{ opacity: 1, scale: 1, y: 0, filter: 'blur(0px)' }}
+               transition={{ duration: 0.9, delay: 0.1 }}
+               src={shineCraftLogo}
+               alt="ShineCraft logo"
+               className="h-24 md:h-28 w-auto object-contain mb-4"
+             />
              
              <motion.span
                 initial={{ opacity: 0, y: 5 }}

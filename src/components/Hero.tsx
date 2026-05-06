@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
+import heroCardImage from '../../hero card image.jpg';
 
 export default function Hero() {
   return (
@@ -13,8 +14,14 @@ export default function Hero() {
         {/* Right side background image placeholder */}
         <div className="absolute inset-0 right-0 w-[80%] ml-auto z-0 flex items-center justify-end pr-10 lg:pr-20 opacity-30 lg:opacity-100">
            <div className="hidden md:block w-full max-w-[350px] lg:max-w-[450px] xl:max-w-[500px] aspect-[4/5] bg-[#111111] border border-white/5 relative overflow-hidden group shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-tr from-brand-red/10 to-transparent z-10"></div>
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[40%] bg-white/5 rotate-[-35deg] blur-3xl z-10"></div>
+              <img
+                src={heroCardImage}
+                alt="Ceramic coating feature"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-black/10 z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-brand-red/15 via-transparent to-transparent z-10"></div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[40%] bg-white/10 rotate-[-35deg] blur-3xl z-10"></div>
               
               <div className="absolute bottom-8 left-8 right-8 z-20">
                  <div className="text-[10px] uppercase tracking-[0.4em] text-brand-red font-black mb-2">Featured Service</div>
@@ -43,7 +50,7 @@ export default function Hero() {
             
             <h1 className="text-5xl lg:text-[84px] leading-[0.9] font-black tracking-tighter uppercase mb-6 text-white pb-2 relative z-10">
               Showroom<br />
-              <span className="text-transparent" style={{ WebkitTextStroke: '1px white' }}>Shine,</span><br />
+              <span className="display-outline">Shine,</span><br />
               Brought To <span className="text-brand-red">You.</span>
             </h1>
           </motion.div>

@@ -50,7 +50,7 @@ export default function ServiceArea() {
                 </a>
               </div>
               <div className="flex items-center gap-3 text-white">
-                <a href="https://instagram.com/shinecraft_au" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-brand-red transition-colors">
+                <a href="https://www.instagram.com/shinecraft_au" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-brand-red transition-colors">
                   <Instagram className="w-5 h-5" />
                   <span className="font-bold">@shinecraft_au</span>
                 </a>
@@ -63,28 +63,25 @@ export default function ServiceArea() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative h-[400px] bg-brand-carbon border border-white/5 rounded-sm overflow-hidden flex items-center justify-center p-8"
+            className="relative h-[400px] bg-brand-carbon border border-white/5 rounded-sm overflow-hidden"
           >
-            {/* Minimal Map Simulation */}
-            <div className="absolute inset-0 z-0">
-              <div className="w-full h-full opacity-20" style={{ 
-                backgroundImage: 'radial-gradient(circle at center, #333 1px, transparent 1px)', 
-                backgroundSize: '24px 24px' 
-              }}></div>
-            </div>
-            
-            <div className="relative z-10 flex flex-col items-center">
-              {/* Pulsing Dot */}
-              <div className="relative w-8 h-8 flex items-center justify-center mb-3">
-                <div className="absolute inset-0 bg-brand-red rounded-full animate-ping opacity-75" />
-                <div className="relative w-4 h-4 bg-brand-red rounded-full" />
+            <iframe
+              title="ShineCraft service area map"
+              src="https://www.google.com/maps?q=Adelaide%20SA&z=10&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="h-full w-full"
+            />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-brand-carbon via-brand-carbon/40 to-transparent" />
+            <div className="pointer-events-none absolute left-6 top-6 rounded-sm border border-white/10 bg-brand-black/80 px-4 py-3 backdrop-blur-md">
+              <div className="flex items-center gap-3 text-white">
+                <div className="relative flex h-3 w-3">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-red/75" />
+                  <span className="relative inline-flex h-3 w-3 rounded-full bg-brand-red" />
+                </div>
+                <span className="text-xs font-bold uppercase tracking-[0.3em] text-white/90">Adelaide, SA</span>
               </div>
-              <div className="bg-brand-black border border-white/10 px-4 py-2 rounded-sm shadow-2xl backdrop-blur-md">
-                <p className="font-heading font-medium text-white tracking-wide">ADELAIDE, SA</p>
-              </div>
             </div>
-            
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-brand-carbon to-transparent z-0" />
           </motion.div>
 
         </div>

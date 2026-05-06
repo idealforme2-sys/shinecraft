@@ -33,7 +33,7 @@ export default function FinalCTA() {
 
           <h2 className="text-5xl md:text-[80px] leading-[0.85] font-black tracking-tighter uppercase mb-8 text-white relative z-10">
             Ready For A<br />
-            <span className="text-transparent" style={{ WebkitTextStroke: '2px rgba(255,255,255,0.8)' }}>Better Finish?</span>
+            <span className="display-outline display-outline-thick">Better Finish?</span>
           </h2>
 
           <p className="text-brand-muted text-lg md:text-xl mb-12 max-w-2xl mx-auto font-light leading-relaxed relative z-10">
@@ -49,7 +49,7 @@ export default function FinalCTA() {
               Call 0493 427 300
             </a>
             <a
-              href="https://instagram.com/shinecraft_au"
+              href="https://www.instagram.com/shinecraft_au"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-white/20 hover:border-brand-red px-12 py-6 font-bold uppercase text-xs tracking-[0.2em] transition-colors flex items-center justify-center gap-3 w-full sm:w-auto text-white group"

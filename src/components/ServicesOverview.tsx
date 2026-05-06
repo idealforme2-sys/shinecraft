@@ -56,7 +56,7 @@ export default function ServicesOverview() {
             viewport={{ once: true }}
             className="text-4xl md:text-[60px] leading-[0.9] font-black tracking-tighter uppercase mb-6"
           >
-            Everything Your Car <span className="text-transparent" style={{ WebkitTextStroke: '1px white' }}>Needs.</span>
+            Everything Your Car <span className="display-outline">Needs.</span>
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}

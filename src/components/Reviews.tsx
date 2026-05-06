@@ -37,7 +37,7 @@ export default function Reviews() {
             viewport={{ once: true }}
             className="text-4xl md:text-[60px] leading-[0.9] font-black tracking-tighter uppercase mb-4"
           >
-            Word of <span className="text-transparent" style={{ WebkitTextStroke: '1px white' }}>Mouth.</span>
+            Word of <span className="display-outline">Mouth.</span>
           </motion.h2>
           <p className="text-xs text-brand-red font-mono uppercase tracking-widest mt-4">
             Developer Note: Replace placeholder testimonials with real reviews before launch.
