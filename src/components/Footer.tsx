@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 border-b border-white/5 pb-16">
           <div className="md:col-span-12 lg:col-span-4">
-            <div className="mb-6 flex w-max items-center border border-white/10 p-4 transition-colors hover:border-brand-red">
+            <div className="mb-6 flex w-max items-center">
               <img
                 src={shineCraftLogo}
                 alt="ShineCraft logo"

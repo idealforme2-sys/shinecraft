@@ -18,6 +18,7 @@ import Reviews from './components/Reviews';
 import ServiceArea from './components/ServiceArea';
 import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
+import EstimateSection from './components/EstimateSection';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -40,6 +41,7 @@ export default function App() {
         <ServiceArea />
         <FAQ />
         <FinalCTA />
+        <EstimateSection />
       </main>
 
       <Footer />

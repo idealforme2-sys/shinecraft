@@ -39,6 +39,7 @@ export default function CeramicFeature() {
           >
             {/* Simulation of a car surface with a coating layer */}
             <div className="absolute inset-0 bg-gradient-to-br from-neutral-900 to-black" />
+            <div className="absolute inset-0 opacity-[0.07] [background-image:linear-gradient(rgba(255,255,255,0.2)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.2)_1px,transparent_1px)] [background-size:40px_40px]" />
             
             {/* The "coating" reflection that moves on hover/scroll */}
             <motion.div 
@@ -57,8 +58,34 @@ export default function CeramicFeature() {
             {/* Subtle red reflection */}
             <div className="absolute bottom-0 inset-x-0 h-1/3 bg-gradient-to-t from-brand-red/20 to-transparent mix-blend-screen" />
 
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-               <span className="text-white/20 font-mono tracking-widest uppercase text-sm border border-white/10 px-4 py-2">Paint Surface Simulation</span>
+            <div className="absolute left-6 top-6 z-10 border border-white/10 bg-brand-black/70 px-5 py-4 backdrop-blur-md">
+              <div className="mb-2 flex items-center gap-3">
+                <div className="h-[1px] w-8 bg-brand-red" />
+                <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-brand-red">Ceramic Finish</span>
+              </div>
+              <p className="max-w-[220px] text-[10px] uppercase tracking-[0.24em] leading-relaxed text-white/65">
+                Deep gloss, slick feel, and easier maintenance with a cleaner protected surface.
+              </p>
+            </div>
+
+            <div className="absolute bottom-6 right-6 z-10 grid grid-cols-3 overflow-hidden border border-white/10 bg-brand-black/70 backdrop-blur-md">
+              {[
+                { label: 'Gloss', value: '01' },
+                { label: 'Shield', value: '02' },
+                { label: 'Slick', value: '03' },
+              ].map((item) => (
+                <div
+                  key={item.label}
+                  className="group min-w-[86px] border-l border-white/10 bg-transparent px-4 py-4 transition-colors duration-300 first:border-l-0 hover:bg-white/[0.03]"
+                >
+                  <div className="mb-2 text-[10px] font-mono uppercase tracking-[0.3em] text-white/35 transition-all duration-300 group-hover:text-[#d6b16b] group-hover:[text-shadow:0_0_18px_rgba(214,177,107,0.28)]">
+                    {item.value}
+                  </div>
+                  <div className="bg-[linear-gradient(90deg,#ffffff_0%,#f3e7c5_55%,#d6b16b_100%)] bg-[length:200%_100%] bg-[position:0%_50%] bg-clip-text text-[11px] font-bold uppercase tracking-[0.22em] text-white transition-all duration-500 group-hover:bg-[position:100%_50%] group-hover:text-transparent group-hover:[text-shadow:0_0_18px_rgba(214,177,107,0.16)]">
+                    {item.label}
+                  </div>
+                </div>
+              ))}
             </div>
           </motion.div>
 

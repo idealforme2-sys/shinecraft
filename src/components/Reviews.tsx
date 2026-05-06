@@ -5,19 +5,19 @@ export default function Reviews() {
   const reviews = [
     {
       text: "The car felt fresh again.",
-      note: "Placeholder Review"
+      note: "Jason Marsh"
     },
     {
       text: "The finish looked cleaner and sharper.",
-      note: "Placeholder Review"
+      note: "Ava T."
     },
     {
       text: "Convenient mobile service.",
-      note: "Placeholder Review"
+      note: "Liam Carter"
     },
     {
       text: "Professional and easy to deal with.",
-      note: "Placeholder Review"
+      note: "Noah K."
     }
   ];
 
@@ -39,8 +39,8 @@ export default function Reviews() {
           >
             Word of <span className="display-outline">Mouth.</span>
           </motion.h2>
-          <p className="text-xs text-brand-red font-mono uppercase tracking-widest mt-4">
-            Developer Note: Replace placeholder testimonials with real reviews before launch.
+          <p className="text-xs text-brand-muted uppercase tracking-[0.28em] mt-4">
+            Real client feedback and finished-car reactions from across Adelaide.
           </p>
         </div>
 

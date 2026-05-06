@@ -113,7 +113,7 @@ function CarouselCard({ card, index }: CarouselCardProps) {
             type="button"
             aria-label={`Previous ${card.title} image`}
             onClick={() => goToSlide(activeIndex - 1)}
-            className="absolute left-3 top-3 z-20 flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-black/45 text-white/80 backdrop-blur-sm transition hover:border-brand-red hover:text-white"
+            className="absolute left-3 top-1/2 z-30 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/45 text-white/80 backdrop-blur-sm transition hover:border-brand-red hover:text-white"
           >
             <ChevronLeft className="h-4 w-4" />
           </button>
@@ -121,14 +121,14 @@ function CarouselCard({ card, index }: CarouselCardProps) {
             type="button"
             aria-label={`Next ${card.title} image`}
             onClick={() => goToSlide(activeIndex + 1)}
-            className="absolute right-3 top-3 z-20 flex h-9 w-9 items-center justify-center rounded-full border border-white/15 bg-black/45 text-white/80 backdrop-blur-sm transition hover:border-brand-red hover:text-white"
+            className="absolute right-3 top-1/2 z-30 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/45 text-white/80 backdrop-blur-sm transition hover:border-brand-red hover:text-white"
           >
             <ChevronRight className="h-4 w-4" />
           </button>
         </>
       )}
 
-      <div className="absolute right-4 top-4 z-20 rounded-full border border-white/10 bg-black/35 px-3 py-1 text-[10px] font-mono uppercase tracking-[0.3em] text-white/75 backdrop-blur-sm">
+      <div className="absolute left-4 top-4 z-30 rounded-full border border-white/10 bg-black/35 px-3 py-1 text-[10px] font-mono uppercase tracking-[0.3em] text-white/75 backdrop-blur-sm">
         {String(activeIndex + 1).padStart(2, '0')} / {String(card.images.length).padStart(2, '0')}
       </div>
 

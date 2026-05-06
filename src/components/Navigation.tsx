@@ -51,7 +51,13 @@ export default function Navigation() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href="#estimate"
+            className="border border-white/15 hover:border-brand-red text-white px-5 py-3 text-[11px] font-bold uppercase tracking-[0.18em] transition-all inline-block"
+          >
+            Get Estimate
+          </a>
           <a
             href="tel:0493427300"
             className="bg-brand-red hover:bg-brand-darkred text-white px-6 py-3 text-xs font-bold uppercase tracking-widest transition-all inline-block"
@@ -88,9 +94,16 @@ export default function Navigation() {
                 </a>
               ))}
               <a
+                href="#estimate"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full text-center border border-white/15 text-white py-4 text-lg font-semibold hover:border-brand-red transition-colors"
+              >
+                Get Estimate
+              </a>
+              <a
                 href="tel:0493427300"
                 onClick={() => setMobileMenuOpen(false)}
-                className="mt-4 w-full text-center bg-brand-red text-white py-4 rounded-sm text-lg font-semibold hover:bg-brand-darkred transition-colors"
+                className="w-full text-center bg-brand-red text-white py-4 rounded-sm text-lg font-semibold hover:bg-brand-darkred transition-colors"
               >
                 Call 0493 427 300
               </a>

@@ -73,15 +73,6 @@ export default function ServiceArea() {
               className="h-full w-full"
             />
             <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-brand-carbon via-brand-carbon/40 to-transparent" />
-            <div className="pointer-events-none absolute left-6 top-6 rounded-sm border border-white/10 bg-brand-black/80 px-4 py-3 backdrop-blur-md">
-              <div className="flex items-center gap-3 text-white">
-                <div className="relative flex h-3 w-3">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-red/75" />
-                  <span className="relative inline-flex h-3 w-3 rounded-full bg-brand-red" />
-                </div>
-                <span className="text-xs font-bold uppercase tracking-[0.3em] text-white/90">Adelaide, SA</span>
-              </div>
-            </div>
           </motion.div>
 
         </div>
