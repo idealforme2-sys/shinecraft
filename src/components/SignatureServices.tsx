@@ -16,21 +16,28 @@ function loadImages(globResult: Record<string, string>) {
 }
 
 const ceramicCoatingImages = loadImages(
-  import.meta.glob('../../Signature Services/Ceramic Coating/*.{jpg,jpeg,JPG,JPEG,png,PNG}', {
+  import.meta.glob('../../Ceramic Coating/*.{jpg,jpeg,JPG,JPEG,png,PNG}', {
     eager: true,
     import: 'default',
   }) as Record<string, string>
 );
 
 const paintCorrectionImages = loadImages(
-  import.meta.glob('../../Signature Services/Paint Correction/*.{jpg,jpeg,JPG,JPEG,png,PNG}', {
+  import.meta.glob('../../Paint correction/*.{jpg,jpeg,JPG,JPEG,png,PNG}', {
     eager: true,
     import: 'default',
   }) as Record<string, string>
 );
 
 const detailingImages = loadImages(
-  import.meta.glob('../../Signature Services/Interior & exterior detailing/*.{jpg,jpeg,JPG,JPEG,png,PNG}', {
+  import.meta.glob('../../Interior Detailing/*.{jpg,jpeg,JPG,JPEG,png,PNG}', {
+    eager: true,
+    import: 'default',
+  }) as Record<string, string>
+);
+
+const cutAndPolishImages = loadImages(
+  import.meta.glob('../../Cut & polish/*.{jpg,jpeg,JPG,JPEG,png,PNG}', {
     eager: true,
     import: 'default',
   }) as Record<string, string>
@@ -44,7 +51,7 @@ const windowTintingImages = loadImages(
 );
 
 const techInstallImages = loadImages(
-  import.meta.glob('../../Signature Services/Tech Install/*.{jpg,jpeg,JPG,JPEG,png,PNG}', {
+  import.meta.glob('../../Dash cam etc/*.{jpg,jpeg,JPG,JPEG,png,PNG}', {
     eager: true,
     import: 'default',
   }) as Record<string, string>
@@ -110,6 +117,12 @@ export default function SignatureServices() {
       tag: 'Best for: Daily drivers',
       description: 'A complete clean inside and out, built to bring back that fresh, cared-for feeling.',
       images: detailingImages,
+    },
+    {
+      title: 'Cut & Polish',
+      tag: 'Best for: Gloss recovery',
+      description: 'Refines paint finish to remove light oxidation and deep-seated grime, restoring a sharp reflection.',
+      images: cutAndPolishImages,
     },
     {
       title: 'Window Tinting',
